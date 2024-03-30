@@ -68,10 +68,10 @@
 					<CardTitle>Wemos S2/S3 mini</CardTitle>
 				</CardHeader>
 				<CardBody>
-					<esp-web-install-button manifest="/manifests/epd2_13.json">
+					<esp-web-install-button manifest="{base}/manifests/epd2_13.json">
 						<span slot="activate"><Button color="primary">2.13 inch</Button></span>
 					</esp-web-install-button>
-					<esp-web-install-button manifest="/manifests/epd2_9.json">
+					<esp-web-install-button manifest="{base}/manifests/epd2_9.json">
 						<span slot="activate"><Button color="secondary">2.9 inch</Button></span>
 					</esp-web-install-button>
 				</CardBody>
@@ -83,7 +83,7 @@
 					<CardTitle>OrangeClock PCB</CardTitle>
 				</CardHeader>
 				<CardBody>
-					<esp-web-install-button manifest="/manifests/oc_pcb.json">
+					<esp-web-install-button manifest="{base}/manifests/oc_pcb.json">
 						<span slot="activate"><Button color="secondary">2.9 inch</Button></span>
 					</esp-web-install-button>
 				</CardBody>

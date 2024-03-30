@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Collapse, Nav, NavItem, Navbar, NavbarBrand } from '@sveltestrap/sveltestrap';
+	import { base } from '$app/paths';
 
 	import { locale, locales } from 'svelte-i18n';
 
@@ -40,8 +41,8 @@
 
 <Navbar expand="md">
 	<NavbarBrand>
-		<img src="/assets/logo-dark.svg" alt="OrangeClock" class="darkModeLogo" />
-		<img src="/assets/logo.svg" alt="OrangeClock" class="lightModeLogo" />
+		<img src="{base}/assets/logo-dark.svg" alt="OrangeClock" class="darkModeLogo" />
+		<img src="{base}/assets/logo.svg" alt="OrangeClock" class="lightModeLogo" />
 	</NavbarBrand>
 	<Collapse navbar expand="md">
 		<Nav class="me-auto" navbar>
