@@ -1,5 +1,5 @@
 <script lang="ts">
-	//	import { PUBLIC_BASE_URL } from '$lib/config';
+    import { base } from '$app/paths';
 
 	import {
 		Container,
@@ -18,6 +18,42 @@
 
 <svelte:head>
 	<title>OrangeBTClock</title>
+	<link
+		href="{base}/assets/favicon/favicon.ico"
+		type="image/x-icon"
+		rel="icon"
+		media="(prefers-color-scheme: light)"
+	/>
+	<link
+		href="{base}/assets/favicon-dark/favicon.ico"
+		type="image/x-icon"
+		rel="icon"
+		media="(prefers-color-scheme: dark)"
+	/>
+	<link
+		href="{base}/assets/favicon/favicon.png"
+		type="image/png"
+		rel="icon"
+		media="(prefers-color-scheme: light)"
+	/>
+	<link
+		href="{base}/assets/favicon-dark/favicon.png"
+		type="image/png"
+		rel="icon"
+		media="(prefers-color-scheme: dark)"
+	/>
+	<link
+		href="{base}/assets/favicon/favicon.svg"
+		type="image/svg+xml"
+		rel="icon"
+		media="(prefers-color-scheme: light)"
+	/>
+	<link
+		href="{base}/assets/favicon-dark/favicon.svg"
+		type="image/svg+xml"
+		rel="icon"
+		media="(prefers-color-scheme: dark)"
+	/>
 	<script
 		type="module"
 		src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
