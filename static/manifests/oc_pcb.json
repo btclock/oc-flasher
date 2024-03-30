@@ -1,0 +1,14 @@
+{
+    "name": "OrangeClock PCB",
+    "builds": [
+        {
+            "chipFamily": "ESP32-S3",
+            "parts": [
+                {
+                    "path": "/firmwares/orangeclock_29epd.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
