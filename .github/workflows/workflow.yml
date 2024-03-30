@@ -43,7 +43,7 @@ jobs:
             ~/node_modules
           key: ${{ runner.os }}-webflasher
       - name: Install yarn
-        run: yarn && yarn postinstall
+        run: yarn
       - name: Run linter
         run: yarn lint
       # - name: Run vitest tests
@@ -52,22 +52,22 @@ jobs:
       #   run: npx playwright install --with-deps
       # - name: Run Playwright tests
       #   run: npx playwright test
-      - name: Build 
+      - name: Build
         run: yarn build
       - name: Create tarball
         run: tar czf webflasher.tgz --strip-components=1 dist
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: "github-pages"
+          name: 'github-pages'
           path: |
             webflasher.tgz
   deploy:
     # Add a dependency to the build job
     needs: build
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

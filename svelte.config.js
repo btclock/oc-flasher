@@ -20,8 +20,8 @@ const config = {
 		}),
 		appDir: 'build',
 		paths: {
-            base: process.env.NODE_ENV === 'production' ? '/oc-flasher' : '',
-        }
+			base: process.env.NODE_ENV === 'production' ? '/oc-flasher' : ''
+		}
 	}
 };
 

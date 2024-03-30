@@ -1,17 +1,13 @@
 {
-    "name": "OrangeClock 2.9 inch",
-    "builds": [
-      {
-        "chipFamily": "ESP32-S2",
-        "parts": [
-          { "path": "lolin_s2_mini_29epd.bin", "offset": 0 }
-        ]
-      },
-      {
-        "chipFamily": "ESP32-S3",
-        "parts": [
-          { "path": "lolin_s3_mini_29epd.bin", "offset": 0 }
-        ]
-      }
-    ]
-  }
+	"name": "OrangeClock 2.9 inch",
+	"builds": [
+		{
+			"chipFamily": "ESP32-S2",
+			"parts": [{ "path": "lolin_s2_mini_29epd.bin", "offset": 0 }]
+		},
+		{
+			"chipFamily": "ESP32-S3",
+			"parts": [{ "path": "lolin_s3_mini_29epd.bin", "offset": 0 }]
+		}
+	]
+}

@@ -1,19 +1,7 @@
 <script lang="ts">
-	import {
-		Collapse,
-		Dropdown,
-		DropdownItem,
-		DropdownMenu,
-		DropdownToggle,
-		Nav,
-		NavItem,
-		NavLink,
-		Navbar,
-		NavbarBrand
-	} from '@sveltestrap/sveltestrap';
+	import { Collapse, Nav, NavItem, Navbar, NavbarBrand } from '@sveltestrap/sveltestrap';
 
-	import { page } from '$app/stores';
-	import { locale, locales, isLoading } from 'svelte-i18n';
+	import { locale, locales } from 'svelte-i18n';
 
 	export const setLocale = (lang: string) => () => {
 		locale.set(lang);
@@ -57,9 +45,7 @@
 	</NavbarBrand>
 	<Collapse navbar expand="md">
 		<Nav class="me-auto" navbar>
-			<NavItem>
-				WebFlasher
-			</NavItem>
+			<NavItem>WebFlasher</NavItem>
 		</Nav>
 	</Collapse>
 </Navbar>
